@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="register.html">Job Application</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <div class="container">
+        <h2>Job Application</h2>
+
+        <form id="jobForm">
+            <label>Full Name:</label>
+            <input type="text" id="name" required>
+            <small class="error" id="nameErr">Enter a valid full name!</small>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+            <small class="error" id="emailErr">Enter a valid email!</small>
+
+            <label>Phone Number:</label>
+            <input type="text" id="phone" required>
+            <small class="error" id="phoneErr">Phone must be 10 digits!</small>
+
+            <label>Position Applying For:</label>
+            <select id="position" required>
+                <option value="">Select Role</option>
+                <option>Web Developer</option>
+                <option>Software Engineer</option>
+                <option>UI/UX Designer</option>
+                <option>Data Analyst</option>
+            </select>
+            <small class="error" id="posErr">Please select a position!</small>
+
+            <label>Cover Letter:</label>
+            <textarea id="cover" rows="4" required></textarea>
+            <small class="error" id="coverErr">Please write at least 20 characters!</small>
+
+            <button type="submit">Submit Application</button>
+
+            <p style="text-align:center;margin-top:10px;">
+                Already have an account? <a href="login.html">Login</a>
+            </p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

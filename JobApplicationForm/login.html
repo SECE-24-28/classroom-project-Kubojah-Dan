@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Career Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="register.html">Job Application</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <div class="container">
+        <h2>Login</h2>
+
+        <form id="loginForm">
+
+            <label>Email:</label>
+            <input type="email" id="loginEmail" required>
+            <small class="error" id="loginEmailErr">Invalid email format!</small>
+
+            <label>Password:</label>
+            <input type="password" id="loginPassword" required>
+            <small class="error" id="loginPassErr">Password must be 6+ chars</small>
+
+            <button type="submit">Login</button>
+
+            <p style="text-align:center;margin-top:10px;">
+                New user? <a href="register.html">Apply Now</a>
+            </p>
+        </form>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
